@@ -1,6 +1,7 @@
 {
     /**
      * Type Aliases
+     * 타입을 변수처럼 선언하는 방법
      */
     type Text = string;
     const name: Text = 'ellie';
