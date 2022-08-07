@@ -3,7 +3,7 @@
 * * *
 
 ## 1. 기본 타입 마스터하기
-> ### <a href='https://github.com/kina94/TypeScript-Bowl/commit/b3b7fd752cd1db5bee4dc0e614ff17841af7d849'>  1-1. 기본 타입 정리하기 (numbers, string, boolean, undefined, null, unknown, any, void, never, object) </a>
+> ### <a href='https://github.com/kina94/TypeScript-Bowl/blob/main/01.%20%EA%B8%B0%EB%B3%B8%20%ED%83%80%EC%9E%85%20%EB%A7%88%EC%8A%A4%ED%84%B0%20%ED%95%98%EA%B8%B0/1-1-basic.ts'>  1-1. 기본 타입 정리하기 (numbers, string, boolean, undefined, null, unknown, any, void, never, object) </a>
 > ### <a href="https://github.com/kina94/TypeScript-Bowl/blob/main/01.%20%EA%B8%B0%EB%B3%B8%20%ED%83%80%EC%9E%85%20%EB%A7%88%EC%8A%A4%ED%84%B0%20%ED%95%98%EA%B8%B0/1-2-function.ts"> 1-2.함수에서 타입 이용하기 (JS 💩 → TS ✨)</a>
 > ### <a href="https://github.com/kina94/TypeScript-Bowl/blob/main/01.%20%EA%B8%B0%EB%B3%B8%20%ED%83%80%EC%9E%85%20%EB%A7%88%EC%8A%A4%ED%84%B0%20%ED%95%98%EA%B8%B0/1-3-array.ts"> 1-3. 배열과 튜플 </a>
 > ### <a href="https://github.com/kina94/TypeScript-Bowl/blob/main/01.%20%EA%B8%B0%EB%B3%B8%20%ED%83%80%EC%9E%85%20%EB%A7%88%EC%8A%A4%ED%84%B0%20%ED%95%98%EA%B8%B0/1-4-alias.ts">1-4. 타입스크립트의 꽃 🌷 Type Alias</a>
