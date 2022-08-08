@@ -36,16 +36,12 @@
 <div markdown="1">       
 
 > ### 1. 객체지향 프로그래밍
-> #### <a href='https://github.com/kina94/TypeScript-Bowl/blob/main/01.%20%EA%B8%B0%EB%B3%B8%20%ED%83%80%EC%9E%85%20%EB%A7%88%EC%8A%A4%ED%84%B0%20%ED%95%98%EA%B8%B0/1-1-basic.ts'>  1-1. 객체지향의 개념과 원칙 (numbers, string, boolean, undefined, null, unknown, any, void, never, object) </a>
+> #### <a href='https://github.com/kina94/TypeScript-Bowl/blob/main/03.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/3-1-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5.md'>  1-1. 객체지향의 개념과 원칙 </a>
 > #### <a href="https://github.com/kina94/TypeScript-Bowl/blob/main/01.%20%EA%B8%B0%EB%B3%B8%20%ED%83%80%EC%9E%85%20%EB%A7%88%EC%8A%A4%ED%84%B0%20%ED%95%98%EA%B8%B0/1-2-function.ts"> 1-2. 절차지향적으로 커피 기계 만들기</a>
 > #### <a href="https://github.com/kina94/TypeScript-Bowl/blob/main/01.%20%EA%B8%B0%EB%B3%B8%20%ED%83%80%EC%9E%85%20%EB%A7%88%EC%8A%A4%ED%84%B0%20%ED%95%98%EA%B8%B0/1-3-array.ts"> 1-3. 객체지향적으로 커피 기계 수정하기 </a>
 > #### <a href="https://github.com/kina94/TypeScript-Bowl/blob/main/01.%20%EA%B8%B0%EB%B3%B8%20%ED%83%80%EC%9E%85%20%EB%A7%88%EC%8A%A4%ED%84%B0%20%ED%95%98%EA%B8%B0/1-4-alias.ts">1-4. 캡슐화 시키기</a>
 
 > ### 2. 객체지향 프로그래밍 연습하기
-> #### <a href='https://github.com/kina94/TypeScript-Bowl/blob/main/03.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/3-1-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5.md'>  2-1. 객체지향의 개념과 원칙 </a>
-> #### <a href="https://github.com/kina94/TypeScript-Bowl/blob/main/01.%20%EA%B8%B0%EB%B3%B8%20%ED%83%80%EC%9E%85%20%EB%A7%88%EC%8A%A4%ED%84%B0%20%ED%95%98%EA%B8%B0/1-2-function.ts"> 2-2. 절차지향적으로 커피 기계 만들기</a>
-> #### <a href="https://github.com/kina94/TypeScript-Bowl/blob/main/01.%20%EA%B8%B0%EB%B3%B8%20%ED%83%80%EC%9E%85%20%EB%A7%88%EC%8A%A4%ED%84%B0%20%ED%95%98%EA%B8%B0/1-3-array.ts"> 2-3. 객체지향적으로 커피 기계 수정하기 </a>
-> #### <a href="https://github.com/kina94/TypeScript-Bowl/blob/main/01.%20%EA%B8%B0%EB%B3%B8%20%ED%83%80%EC%9E%85%20%EB%A7%88%EC%8A%A4%ED%84%B0%20%ED%95%98%EA%B8%B0/1-4-alias.ts">2-4. 캡슐화 시키기</a>
 
 </div>
 </details>
