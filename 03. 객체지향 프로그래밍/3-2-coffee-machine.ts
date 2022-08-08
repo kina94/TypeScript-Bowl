@@ -31,15 +31,13 @@
     private static BEANS_GRAMM_PER_SHOT = 7; // static : class level로 오브젝트마다 생성되지 않음. (함께 공유돨 수 있는 변수에 사용)
     private coffeBeansGramm: number = 0; // instance (object) level : 오브젝트마다 생성.
 
-    constructor(coffeBeansGramm: number) {
+    constructor(
+      coffeBeansGramm: number,
+      private milk: MilkFrother,
+      private sugar: SugarProvide
+    ) {
       // instance를 만들 때 호출되는 함수
       this.coffeBeansGramm = coffeBeansGramm;
-    }
-
-    //이러한 함수를 사용하면 생성자를 이용한 생성을 금지하는 경우임
-    //constructor를 private로 설정해서 해당 static method를 이용하도록 하기
-    static makeMachine(coffeBeansGram: number): CoffeeMachine {
-      return new CoffeeMachine(coffeBeansGram);
     }
 
     fillCoffeeBeans(beans: number) {
@@ -76,7 +74,9 @@
     makeCoffee(shots: number): CoffeeCup {
       this.grindBeans(shots);
       this.preheat();
-      return this.extract(shots);
+      const coffee = this.extract(shots);
+      const sugarAdded = this.sugar.addSugar(coffee)
+      return this.milk.makeMilk(sugarAdded)
     }
   }
 
@@ -88,7 +88,7 @@
   }
 
   interface SugarProvide {
-    addSugar(cup: CoffeeCup): CoffeeCup
+    addSugar(cup: CoffeeCup): CoffeeCup;
   }
   // 싸구려 우유 거품기
   class CheapMilkSteamer implements MilkFrother {
@@ -121,8 +121,14 @@
     }
   }
 
+  class NoMilk implements MilkFrother {
+    makeMilk(cup: CoffeeCup) : CoffeeCup{
+        return cup
+    }
+  }
+
   // 설탕 제조기
-  class CandySugarMixer implements SugarProvide{
+  class CandySugarMixer implements SugarProvide {
     private getSugar() {
       console.log("Getting some sugar from candy...");
       return true;
@@ -133,7 +139,7 @@
     }
   }
 
-  class SugarMixer implements SugarProvide{
+  class SugarMixer implements SugarProvide {
     private getSugar() {
       console.log("Getting some sugar from jar...");
       return true;
@@ -144,45 +150,9 @@
     }
   }
 
-  // 부모 요소의 기능을 그대로 가져오되 스팀밀크 기능 추가하기
-  class CaffeLatteMachine extends CoffeeMachine {
-    //자식 클래스에서 새로운 생성자를 선택할 때는 super를 호출해야 함
-    //부모 클래스에서 사용하는 생성자도 전달해야 함 (coffeeBeansGramm)
-    //자식 클래스에서 새로운 생성자를 만들면 public, private 등 명시 필요
-    constructor(
-      coffeeBeansGramm: number,
-      public serialNumber: string,
-      private milkFrother: MilkFrother,
-    ) {
-      super(coffeeBeansGramm);
-    }
-    makeCoffee(shots: number): CoffeeCup {
-      const coffee = super.makeCoffee(shots); // 부모 클래스의 함수에 접근
-      return this.milkFrother.makeMilk(coffee);
-    }
-  }
-
-  class SweetCoffeeMaker extends CoffeeMachine {
-    constructor(private beans: number, private sugar: SugarProvide) {
-      super(beans);
-    }
-    makeCoffee(shots: number): CoffeeCup {
-      const coffee = super.makeCoffee(shots);
-      return this.sugar.addSugar(coffee);
-    }
-  }
-
-  class SweetCaffeLatteMachine extends CoffeeMachine {
-    constructor(
-      private beans: number,
-      private sugar: SugarProvide,
-      private milk: MilkFrother,
-    ) {
-      super(beans);
-    }
-    makeCoffee(shots: number): CoffeeCup {
-      const coffee = super.makeCoffee(shots);
-      return this.milk.makeMilk(this.sugar.addSugar(coffee));
+  class NoSugar implements SugarProvide{
+    addSugar(cup: CoffeeCup) : CoffeeCup{
+        return cup
     }
   }
 
@@ -190,15 +160,21 @@
   const cheapMilkMaker = new CheapMilkSteamer();
   const fancyMilkMaker = new FancyMilkSteamer();
   const coldMilkMaker = new ColdMilkSteamer();
+  const noMilkMaker = new NoMilk();
 
   //SUGAR
   const candySugar = new CandySugarMixer();
   const sugar = new SugarMixer();
+  const noSugar = new NoSugar();
 
- //Machine
-  const sweetCandyMachine = new SweetCoffeeMaker(12, candySugar)
-  const sweetMachine = new SweetCoffeeMaker(12, sugar)
-  const latteMachine = new CaffeLatteMachine(12, 'SS', cheapMilkMaker)
-  const coldLatteMachine = new CaffeLatteMachine(12, 'BB', coldMilkMaker)
-  const sweetCaffeLatteMachine = new SweetCaffeLatteMachine(12, candySugar, cheapMilkMaker)
+  //Machine
+  const sweetCandyMachine = new CoffeeMachine(12, noMilkMaker, candySugar);
+  const sweetMachine = new CoffeeMachine(12, noMilkMaker, sugar);
+  const latteMachine = new CoffeeMachine(12, fancyMilkMaker, noSugar);
+  const coldLatteMachine = new CoffeeMachine(12, coldMilkMaker, noSugar);
+  const sweetCaffeLatteMachine = new CoffeeMachine(
+    12,
+    fancyMilkMaker,
+    sugar
+  );
 }
