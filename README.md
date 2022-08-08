@@ -46,6 +46,9 @@
 > #### <a href="https://github.com/kina94/TypeScript-Bowl/commit/de99775783b1e852d259a09587cd9627b994e3ad">1-8. 상속으로 라떼 머신 만들기</a>
 > #### <a href="https://github.com/kina94/TypeScript-Bowl/commit/d0b3424b549f080448a1f4accbbb7b8915fca886">1-9. 다형성</a>
 > #### <a href="https://github.com/kina94/TypeScript-Bowl/commit/57a4b4cd4e65168d7f9ecfcc8f167720138539ef">1-10. 상속 문제를 해결할 수 있는 Composition</a>
+> #### <a href="https://github.com/kina94/TypeScript-Bowl/commit/ac61ba5a2adf1d309ea1805fc14fa636ac0b515e">1-11. Composition과 Interface로 커피 머신에 들어가는 재료 바꾸기 </a>
+> #### <a href="https://github.com/kina94/TypeScript-Bowl/commit/94097602c49a1a3b5905404e0f713a593a29fd5e">1-11. Composition과 Interface로 커피머신 하나로 만들기 </a>
+
 
 
 > ### 2. 객체지향 프로그래밍 연습하기
