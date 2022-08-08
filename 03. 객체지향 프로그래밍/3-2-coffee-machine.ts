@@ -109,6 +109,7 @@
 
     // 다형성을 이용하여 한 가지 클래스나 인터페이스를 통해 다른 방식으로 구현한 클래스를 만들 수 있다
     // 인터페이스를 지정해서 사용할 수도 있다.
+    // ✨ 인터페이스와 부모 클래스에 있는 API를 호출할 수 있게 되면서 사용자가 간편하게 사용할 수 있음
     const machines: CoffeeMaker[] = [
         new CoffeeMachine(16),
         new CaffeLatteMachine(16, '1'),
