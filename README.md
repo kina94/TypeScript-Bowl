@@ -43,6 +43,7 @@
 > #### <a href="https://github.com/kina94/TypeScript-Bowl/blob/main/03.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/3-3-Getter%EC%99%80%20Setter.ts">1-5. Getter와 Setter</a>
 > #### <a href="https://github.com/kina94/TypeScript-Bowl/commit/13c4836b600cf79e0b6ae544452e87c21445fef1">1-6. 추상화</a>
 > #### <a href="https://github.com/kina94/TypeScript-Bowl/commit/b4b92dd7c7cfa867e2be587c3a6aa7d7b34d9d17">1-7. Interface</a>
+> #### <a href="https://github.com/kina94/TypeScript-Bowl/commit/de99775783b1e852d259a09587cd9627b994e3ad">1-8. 상속으로 라떼 머신 만들기</a>
 
 > ### 2. 객체지향 프로그래밍 연습하기
 
