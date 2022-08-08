@@ -16,16 +16,22 @@
      * - 메소드가 많고 복잡할 때 꼭 필요한 메소드만을 노출시켜서 클래스를 간단하게 사용할 수 있게 해줌
      * Interface
      * - class가 반드시 따라야 하는 명세서
-     * Interface로 타입을 지정하면 Interface에 명세된 함수만을 사용할 수 있다.
+     * - Interface로 타입을 지정하면 Interface에 명세된 함수만을 사용할 수 있다.
     */
 
     interface CoffeeMaker {
         makeCoffee(shots: number): CoffeCup;
     }
 
+    interface ComercialCoffeeMaker {
+        makeCoffee(shots: number): CoffeCup;
+        fillCoffeeBeans(beans: number): void;
+        clean(): void;
+    }
+
     //커피 머신은 커피 메이커 인터페이스를 반드시 따라야 함.
     //인터페이스에 적혀있는 모든 메소드를 구현해야 한다.
-    class CoffeeMachine implements CoffeeMaker{ //서로 관련 있는 데이터와 함수를 묶는 템플릿
+    class CoffeeMachine implements CoffeeMaker, ComercialCoffeeMaker{ //서로 관련 있는 데이터와 함수를 묶는 템플릿
         private static BEANS_GRAMM_PER_SHOT = 7; // static : class level로 오브젝트마다 생성되지 않음. (함께 공유돨 수 있는 변수에 사용)
         private coffeBeansGramm: number = 0; // instance (object) level : 오브젝트마다 생성.
 
@@ -44,6 +50,10 @@
                 throw new Error('value for beans sholud be greater than 0');
             }
             this.coffeBeansGramm += beans;
+        }
+
+        clean() {
+            console.log('cleaning the machine...');
         }
 
         private grindBeans(shots: number) {
@@ -73,11 +83,27 @@
         }
     }
 
-    const maker: CoffeeMachine = CoffeeMachine.makeMachine(32);
-    maker.fillCoffeeBeans(3)
-    maker.makeCoffee(2)
+    class AmateurUser {
+        constructor(private machine: CoffeeMaker) {}
+        makeCoffee(){
+            const coffee = this.machine.makeCoffee(2)
+            console.log(coffee)
+        }
+    }
 
-    const maker2: CoffeeMaker = CoffeeMachine.makeMachine(32);
-    // maker2.fillCoffeeBeans(3) CoffeMaker Interface에는 없기 때문에 사용할 수 없다.
-    maker2.makeCoffee(2)
+    class ProBarista {
+        constructor(private machine: ComercialCoffeeMaker){}
+        makeCoffee(){
+            const coffee = this.machine.makeCoffee(2)
+            console.log(coffee)
+            this.machine.fillCoffeeBeans(45);
+            this.machine.clean();
+        }
+    }
+
+    const maker: CoffeeMachine = CoffeeMachine.makeMachine(32);
+    const amateur = new AmateurUser(maker);
+    const pro = new ProBarista(maker);
+    amateur.makeCoffee()
+    pro.makeCoffee()
 }
