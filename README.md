@@ -44,6 +44,7 @@
 > #### <a href="https://github.com/kina94/TypeScript-Bowl/commit/13c4836b600cf79e0b6ae544452e87c21445fef1">1-6. 추상화</a>
 > #### <a href="https://github.com/kina94/TypeScript-Bowl/commit/b4b92dd7c7cfa867e2be587c3a6aa7d7b34d9d17">1-7. Interface</a>
 > #### <a href="https://github.com/kina94/TypeScript-Bowl/commit/de99775783b1e852d259a09587cd9627b994e3ad">1-8. 상속으로 라떼 머신 만들기</a>
+> #### <a href="https://github.com/kina94/TypeScript-Bowl/commit/d0b3424b549f080448a1f4accbbb7b8915fca886">1-9. 다형성</a>
 
 > ### 2. 객체지향 프로그래밍 연습하기
 
