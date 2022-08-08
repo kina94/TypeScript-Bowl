@@ -1,7 +1,8 @@
 {
     type CoffeeCup = {
         shots: number;
-        hasMilk: boolean;
+        hasMilk?: boolean;
+        hasSugar?: boolean;
     };
 
     /**
@@ -95,9 +96,35 @@
         }
     }
 
-    const machine = new CoffeeMachine(23);
-    const latteMachine = new CaffeLatteMachine(23, 'SSS');
-    const coffee = latteMachine.makeCoffee(1)
-    console.log(coffee)
-    console.log(latteMachine.serialNumber)
+    class SweetCoffeeMaker extends CoffeeMachine{
+        private addSugar():void {
+            console.log('add some sugar....')
+        }
+        makeCoffee(shots: number): CoffeeCup{
+            const coffee = super.makeCoffee(shots);
+            this.addSugar()
+            return{...coffee, hasSugar:true}
+        }
+    }
+
+    // 다형성을 이용하여 한 가지 클래스나 인터페이스를 통해 다른 방식으로 구현한 클래스를 만들 수 있다
+    // 인터페이스를 지정해서 사용할 수도 있다.
+    const machines: CoffeeMaker[] = [
+        new CoffeeMachine(16),
+        new CaffeLatteMachine(16, '1'),
+        new SweetCoffeeMaker(16),
+    ]
+
+    machines.forEach(machine=>{
+        console.log('-----------------------')
+        console.log(machine)
+        machine.makeCoffee(1)
+    })
+
+    // const machine = new CoffeeMachine(23);
+    // const latteMachine = new CaffeLatteMachine(23, 'SSS');
+    // const coffee = latteMachine.makeCoffee(1)
+    // const sweetCoffeeMachine = new SweetCoffeeMaker(30);
+    // const sweetCoffee = sweetCoffeeMachine.makeCoffee(2)
+    // console.log(sweetCoffee)
 }
