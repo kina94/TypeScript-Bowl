@@ -41,6 +41,7 @@
 > #### <a href="https://github.com/kina94/TypeScript-Bowl/commit/ce55bb1c097c686302e70dda60b784c796e6d1c1"> 1-3. 객체지향적으로 커피 기계 수정하기 </a>
 > #### <a href="https://github.com/kina94/TypeScript-Bowl/blob/main/01.%20%EA%B8%B0%EB%B3%B8%20%ED%83%80%EC%9E%85%20%EB%A7%88%EC%8A%A4%ED%84%B0%20%ED%95%98%EA%B8%B0/1-4-alias.ts">1-4. 캡슐화 시키기</a>
 > #### <a href="https://github.com/kina94/TypeScript-Bowl/blob/main/03.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/3-3-Getter%EC%99%80%20Setter.ts">1-5. Getter와 Setter</a>
+> #### <a href="https://github.com/kina94/TypeScript-Bowl/commit/13c4836b600cf79e0b6ae544452e87c21445fef1">1-6. 추상화</a>
 
 > ### 2. 객체지향 프로그래밍 연습하기
 
