@@ -52,6 +52,6 @@
 
 
 > ### 2. 객체지향 프로그래밍 연습하기
-
+> #### <a href='https://github.com/kina94/TypeScript-Bowl/blob/main/04.%20%EA%B0%9D%EC%B1%84%EC%A7%80%ED%96%A5%20%EC%97%B0%EC%8A%B5%ED%95%98%EA%B8%B0/4-1-stack.ts'>  2-1. 객체지향적으로 스택 구현하기 </a>
 </div>
 </details>
