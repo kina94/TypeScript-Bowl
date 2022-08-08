@@ -1,5 +1,5 @@
 {
-    type CoffeCup = {
+    type CoffeeCup = {
         shots: number;
         hasMilk: boolean;
     };
@@ -20,22 +20,16 @@
     */
 
     interface CoffeeMaker {
-        makeCoffee(shots: number): CoffeCup;
-    }
-
-    interface ComercialCoffeeMaker {
-        makeCoffee(shots: number): CoffeCup;
-        fillCoffeeBeans(beans: number): void;
-        clean(): void;
+        makeCoffee(shots: number): CoffeeCup;
     }
 
     //커피 머신은 커피 메이커 인터페이스를 반드시 따라야 함.
     //인터페이스에 적혀있는 모든 메소드를 구현해야 한다.
-    class CoffeeMachine implements CoffeeMaker, ComercialCoffeeMaker{ //서로 관련 있는 데이터와 함수를 묶는 템플릿
+    class CoffeeMachine implements CoffeeMaker{ //서로 관련 있는 데이터와 함수를 묶는 템플릿
         private static BEANS_GRAMM_PER_SHOT = 7; // static : class level로 오브젝트마다 생성되지 않음. (함께 공유돨 수 있는 변수에 사용)
         private coffeBeansGramm: number = 0; // instance (object) level : 오브젝트마다 생성.
 
-        private constructor(coffeBeansGramm: number) { // instance를 만들 때 호출되는 함수
+        constructor(coffeBeansGramm: number) { // instance를 만들 때 호출되는 함수
             this.coffeBeansGramm = coffeBeansGramm
         }
 
@@ -68,7 +62,7 @@
             console.log('heating up...')
         }
 
-        private extract(shots: number): CoffeCup {
+        private extract(shots: number): CoffeeCup {
             console.log(`Pulling ${shots} shots...`);
             return {
                 shots,
@@ -76,34 +70,34 @@
             }
         }
 
-        makeCoffee(shots: number): CoffeCup {
+        makeCoffee(shots: number): CoffeeCup {
             this.grindBeans(shots);
             this.preheat();
             return this.extract(shots);
         }
     }
 
-    class AmateurUser {
-        constructor(private machine: CoffeeMaker) {}
-        makeCoffee(){
-            const coffee = this.machine.makeCoffee(2)
-            console.log(coffee)
+    // 부모 요소의 기능을 그대로 가져오되 스팀밀크 기능 추가하기
+    class CaffeLatteMachine extends CoffeeMachine{
+        //자식 클래스에서 새로운 생성자를 선택할 때는 super를 호출해야 함
+        //부모 클래스에서 사용하는 생성자도 전달해야 함 (coffeeBeansGramm)
+        //자식 클래스에서 새로운 생성자를 만들면 public, private 등 명시 필요
+        constructor(coffeeBeansGramm: number, public serialNumber: string){
+            super(coffeeBeansGramm)
+        }
+        private steamMilk(): void{
+            console.log('Steaming some milk...')
+        }
+        makeCoffee(shots: number): CoffeeCup{
+            const coffee = super.makeCoffee(shots); // 부모 클래스의 함수에 접근
+            this.steamMilk();
+            return {...coffee, hasMilk:true}
         }
     }
 
-    class ProBarista {
-        constructor(private machine: ComercialCoffeeMaker){}
-        makeCoffee(){
-            const coffee = this.machine.makeCoffee(2)
-            console.log(coffee)
-            this.machine.fillCoffeeBeans(45);
-            this.machine.clean();
-        }
-    }
-
-    const maker: CoffeeMachine = CoffeeMachine.makeMachine(32);
-    const amateur = new AmateurUser(maker);
-    const pro = new ProBarista(maker);
-    amateur.makeCoffee()
-    pro.makeCoffee()
+    const machine = new CoffeeMachine(23);
+    const latteMachine = new CaffeLatteMachine(23, 'SSS');
+    const coffee = latteMachine.makeCoffee(1)
+    console.log(coffee)
+    console.log(latteMachine.serialNumber)
 }
