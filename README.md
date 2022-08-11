@@ -1,6 +1,6 @@
 # TypeScript Bowl - 타입스크립트 공부하기
 ### 타입 스크립트를 공부한 결과를 모아놓은 레포입니다 😺
-- [<a href='https://github.com/kina94/TypeScript-OOP-Bowl/edit/main/README.md#1-%EA%B8%B0%EB%B3%B8-%ED%83%80%EC%9E%85'>1. 기본 타입</a>](#1------)
+- <a href='https://github.com/kina94/TypeScript-OOP-Bowl/edit/main/README.md#1-%EA%B8%B0%EB%B3%B8-%ED%83%80%EC%9E%85'>1. 기본 타입</a>
   * [<a href='https://github.com/kina94/TypeScript-OOP-Bowl/edit/main/README.md#1-%EA%B8%B0%EB%B3%B8-%ED%83%80%EC%9E%85-%EB%A7%88%EC%8A%A4%ED%84%B0%ED%95%98%EA%B8%B0'>1. 기본 타입 마스터하기</a>](#1------------)
   * [<a href='https://github.com/kina94/TypeScript-OOP-Bowl/edit/main/README.md#2-%EA%B8%B0%EB%B3%B8-%ED%83%80%EC%9E%85-%EC%97%B0%EC%8A%B5%ED%95%98%EA%B8%B0'>2. 기본 타입 연습하기</a>](#2-----------)
 - [<a href='https://github.com/kina94/TypeScript-OOP-Bowl/edit/main/README.md#2-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D'>2. 객체지향 프로그래밍</a>](#2-----------)
