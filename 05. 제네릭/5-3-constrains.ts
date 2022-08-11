@@ -28,6 +28,11 @@ function payBad(employee: Employee): Employee{
     return employee
 } 
 
+function payGood<T extends Employee>(employee: T) : T {
+    employee.pay()
+    return employee
+}
+
 const kina = new FullTimeEmployee();
 const bob = new PartTimeEmployee();
 
@@ -37,7 +42,3 @@ const kinaAfterPay = payBad(kina);
 const bobAfterPay = payBad(bob);
 
 
-function pay<T extends Employee>(employee: T) : T {
-    employee.pay()
-    return employee
-}
