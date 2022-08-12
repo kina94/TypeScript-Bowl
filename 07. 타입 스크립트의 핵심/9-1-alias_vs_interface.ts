@@ -17,6 +17,7 @@
   const obj2: PositionInterface = {
     x: 1,
     y: 2,
+    z: 3,
   };
 
   //class: 둘 다 구현 가능
@@ -27,6 +28,7 @@
   const class2: PositionInterface = {
     x: 1,
     y: 2,
+    z: 3,
   };
 
   //Extends: 둘 다 구현 가능
