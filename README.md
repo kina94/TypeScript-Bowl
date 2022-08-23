@@ -1,17 +1,17 @@
 # TypeScript Bowl - 타입스크립트 공부하기
 ### 타입 스크립트를 공부한 결과를 모아놓은 레포입니다 😺
-- <a href='https://github.com/kina94/TypeScript-OOP-Bowl/edit/main/README.md#1-%EA%B8%B0%EB%B3%B8-%ED%83%80%EC%9E%85'>1. 기본 타입</a>
-  * [<a href='https://github.com/kina94/TypeScript-OOP-Bowl/edit/main/README.md#1-%EA%B8%B0%EB%B3%B8-%ED%83%80%EC%9E%85-%EB%A7%88%EC%8A%A4%ED%84%B0%ED%95%98%EA%B8%B0'>1. 기본 타입 마스터하기</a>](#1------------)
-  * [<a href='https://github.com/kina94/TypeScript-OOP-Bowl/edit/main/README.md#2-%EA%B8%B0%EB%B3%B8-%ED%83%80%EC%9E%85-%EC%97%B0%EC%8A%B5%ED%95%98%EA%B8%B0'>2. 기본 타입 연습하기</a>](#2-----------)
-- [<a href='https://github.com/kina94/TypeScript-OOP-Bowl/edit/main/README.md#2-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D'>2. 객체지향 프로그래밍</a>](#2-----------)
-  * [<a href='https://github.com/kina94/TypeScript-OOP-Bowl/edit/main/README.md#1-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D'>1. 객체지향 프로그래밍</a>](#1-----------)
-  * [<a href='https://github.com/kina94/TypeScript-OOP-Bowl/edit/main/README.md#2-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%97%B0%EC%8A%B5%ED%95%98%EA%B8%B0'>2. 객체지향 프로그래밍 연습하기</a>](#2----------------)
-- [<a href='https://github.com/kina94/TypeScript-OOP-Bowl/edit/main/README.md#3-%EC%A0%9C%EB%84%A4%EB%A6%AD'>3. 제네릭</a>](#2-----------)
-  * [<a href='https://github.com/kina94/TypeScript-OOP-Bowl/edit/main/README.md#3-%EC%A0%9C%EB%84%A4%EB%A6%AD'>1. 제네릭 써보기(함수, 클래스, 제네릭 조건)</a>](#1-----------)
-  * [<a href='https://github.com/kina94/TypeScript-OOP-Bowl/edit/main/README.md#3-%EC%A0%9C%EB%84%A4%EB%A6%AD'>2. 제네릭 연습하기</a>](#2----------------)
-- [<a href='https://github.com/kina94/TypeScript-OOP-Bowl/edit/main/README.md#2-%EB%A7%89%EA%B0%95%ED%95%9C-%ED%83%80%EC%9E%85%EB%93%A4'>4. 타입 스크립트의 핵심</a>](#2-----------)
-  * [<a href='https://github.com/kina94/TypeScript-OOP-Bowl/edit/main/README.md#--1-1-%EA%B5%AC%ED%98%84%EC%A0%81-%EC%B8%A1%EB%A9%B4%EA%B3%BC-%EC%9D%B4%EB%A1%A0%EC%A0%81-%EC%B8%A1%EB%A9%B4-'>1. Type Alias vs Interface 뭘 써야 할까?</a>](#1-----------)
-  * [<a href='https://github.com/kina94/TypeScript-OOP-Bowl/edit/main/README.md#2-%EB%A7%89%EA%B0%95%ED%95%9C-%ED%83%80%EC%9E%85%EB%93%A4'>2. 막강한 타입들</a>](#2----------------)
+- [1. 기본 타입](#1-기본-타입)
+  * [1. 기본 타입 마스터하기](#1-기본-타입-마스터하기)
+  * [2. 기본 타입 연습하기](#2-기본-타입-연습하기)
+- [2. 객체지향 프로그래밍](#2-객체지향-프로그래밍)
+  * [1. 객체지향 프로그래밍](#1-객체지향-프로그래밍)
+  * [2. 객체지향 프로그래밍 연습하기</a>](#2-객체지향-프로그래밍-연습하기)
+- [3. 제네릭](#3-제네릭)
+  * [1. 제네릭 써보기(함수, 클래스, 제네릭 조건)](#1-제네릭-써보기)
+  * [2. 제네릭 연습하기](#2-제네릭-연습하기)
+- [4. 타입 스크립트의 핵심](#4-타입스크립트의-핵심)
+  * [1. Type Alias vs Interface 뭘 써야 할까?](#1-type-alias-vs-interface-뭘-써야할까)
+  * [2. 막강한 타입들](#2-막강한-타입들)
 
 
 * * *
@@ -70,3 +70,4 @@
 > #### <a href='https://github.com/kina94/TypeScript-OOP-Bowl/blob/main/07.%20%ED%83%80%EC%9E%85%20%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98%20%ED%95%B5%EC%8B%AC/9-1-alias_vs_interface.ts'>  1-1. 구현적 측면과 이론적 측면 </a>
 > ### 2. 막강한 타입들
 > #### <a href='https://github.com/kina94/TypeScript-OOP-Bowl/blob/main/07.%20%ED%83%80%EC%9E%85%20%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98%20%ED%95%B5%EC%8B%AC/9-2-index.ts'>  2-1. Index 타입 </a>
+> #### <a href='https://github.com/kina94/TypeScript-OOP-Bowl/blob/main/07.%20%ED%83%80%EC%9E%85%20%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98%20%ED%95%B5%EC%8B%AC/9-3-map.ts'>  2-2. mapped 타입 </a>
