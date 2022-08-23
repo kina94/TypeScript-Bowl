@@ -39,3 +39,18 @@ type Animal = {
 const animal: Optional<Animal> = {
   name: "dog",
 };
+
+type Nullabel<T> = { [P in keyof T]?: T[P] | null };
+const obj3: Nullabel<Video> = {
+  title: "hi",
+  author: null,
+};
+
+type Proxy<T> = {
+  get(): T;
+  set(value: T): void;
+};
+
+type Proxify<T> = {
+  [P in keyof T]: Proxy<T[P]>; // 한 번 감싸는 형식으로도 가능함.
+};
