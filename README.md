@@ -12,7 +12,8 @@
 - [4. 타입 스크립트의 핵심](#4-타입스크립트의-핵심)
   * [1. Type Alias vs Interface 뭘 써야 할까?](#1-type-alias-vs-interface-뭘-써야할까)
   * [2. 막강한 타입들](#2-막강한-타입들)
-
+- [5. 자바스크립트와 프로토타입](#5-자바스크립트와-프로토타입)
+  * [1. 프로토타입](#1-프로토타입)
 
 * * *
 
@@ -71,3 +72,19 @@
 > ### 2. 막강한 타입들
 > #### <a href='https://github.com/kina94/TypeScript-OOP-Bowl/blob/main/07.%20%ED%83%80%EC%9E%85%20%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98%20%ED%95%B5%EC%8B%AC/9-2-index.ts'>  2-1. Index 타입 </a>
 > #### <a href='https://github.com/kina94/TypeScript-OOP-Bowl/blob/main/07.%20%ED%83%80%EC%9E%85%20%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98%20%ED%95%B5%EC%8B%AC/9-3-map.ts'>  2-2. mapped 타입 </a>
+> #### <a href='https://github.com/kina94/TypeScript-OOP-Bowl/blob/main/07.%20%ED%83%80%EC%9E%85%20%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98%20%ED%95%B5%EC%8B%AC/9-4-condition.ts'>  2-3. condition 타입 </a>
+> #### <a href='https://github.com/kina94/TypeScript-OOP-Bowl/blob/main/07.%20%ED%83%80%EC%9E%85%20%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98%20%ED%95%B5%EC%8B%AC/9-5-readonly.ts'>  2-4. readonly 타입 </a>
+> #### <a href='https://github.com/kina94/TypeScript-OOP-Bowl/blob/main/07.%20%ED%83%80%EC%9E%85%20%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98%20%ED%95%B5%EC%8B%AC/9-6-partial.ts'>  2-5. partial 타입 </a>
+> #### <a href='https://github.com/kina94/TypeScript-OOP-Bowl/blob/main/07.%20%ED%83%80%EC%9E%85%20%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98%20%ED%95%B5%EC%8B%AC/9-7-pick.ts'>  2-6. pick 타입 </a>
+> #### <a href='https://github.com/kina94/TypeScript-OOP-Bowl/blob/main/07.%20%ED%83%80%EC%9E%85%20%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98%20%ED%95%B5%EC%8B%AC/9-8-omit.ts'>  2-7. omit 타입 </a>
+> #### <a href='https://github.com/kina94/TypeScript-OOP-Bowl/blob/main/07.%20%ED%83%80%EC%9E%85%20%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98%20%ED%95%B5%EC%8B%AC/9-9-record.ts'>  2-8. record 타입 </a>
+
+
+* * *
+
+## 5. 자바스크립트와 프로토타입
+> ### 1. 프로토타입
+> #### <a href='https://github.com/kina94/TypeScript-OOP-Bowl/blob/main/08.%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85/8-0-Prototype.md'>1-1. 프로토타입 </a>
+> #### <a href='https://github.com/kina94/TypeScript-OOP-Bowl/blob/main/08.%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85/8-1-proto.js'>1-2. 프로토타입 예시 </a>
+> ### 2. this
+> ### 3. module
