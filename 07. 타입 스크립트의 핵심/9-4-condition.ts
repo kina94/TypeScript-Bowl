@@ -1,6 +1,6 @@
 {
   type Check<T> = T extends string ? boolean : number;
-  type Type = Check<String>;
+  type Type = Check<string>;
 
   type TypeName<T> = T extends string
     ? "string"
